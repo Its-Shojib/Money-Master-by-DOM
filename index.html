@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <link rel="shortcut icon" href="./logo.jpg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="max-w-screen-xl mx-auto px-4 pt-5 md:px-8 lg:px-16 my-5">
+        <h1 class="text-3xl text-center lg:text-6xl  text-blue-500 font-bold li">Welcome to Money Master! 💸</h1>
+    </header>
+    <main>
+        <section class="max-w-screen-xl mx-auto px-4 pt-5 md:px-8 lg:px-16 my-5">
+            <div class="flex h-fit gap-5 flex-col lg:flex-row">
+                <div class="flex-1 bg-slate-200">
+                    <img class="h-full p-5" src="./Taka.jpg" alt="">
+
+                </div>
+                <div class="space-y-4 bg-slate-200">
+                    <!-- Income -->
+                    <div class="text-center space-y-5 space-x-1 lg:w-[500px]">
+                        <h1 class="text-center text-3xl font-bold text-green-600">Income</h1>
+                        <label class="w-[200px] text-xl font-semibold">
+                            Income:
+                        </label>
+                        <input class="w-[280px] p-3 bg-gray-400 rounded-lg" type="number" name="Income" id="incomeInput">
+                    </div>
+                    <!-- Expances -->
+                    <div class="text-center space-y-4 space-x-1 mt-5 lg:w-[500px]">
+                        <h1 class="text-center text-3xl font-bold text-red-600">Expances</h1>
+                        <label class="w-[200px] text-xl font-semibold">
+                            Food:
+                        </label> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="w-[280px] p-3 bg-gray-400 rounded-lg" type="number" name="Expances" id="foodInput"><br>
+                        <label class="w-[200px] text-xl font-semibold">
+                            Rent:
+                        </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="w-[280px] p-3 bg-gray-400 rounded-lg" type="number" name="Expances" id="rentInput"><br>
+                        <label class="w-[200px] text-xl font-semibold">
+                            Clothes:
+                        </label>
+                        <input class="w-[280px] p-3 bg-gray-400 rounded-lg" type="number" name="Expances" id="clotheInput">
+                    </div>
+                    <div class="text-center">
+                        <button id="calculation" class="bg-blue-500 text-center text-xl text-white px-10 py-2 rounded-lg">Calculate</button>
+                    </div>
+                    <div class="space-y-4 pb-5">
+                        <p class="text-center text-3xl font-bold ">Total Expances: <span id="totalExpances">00</span> $
+                        </p>
+                        <p class="text-center text-3xl font-bold ">Balance: <span id="totalBalance">00</span> $</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Saving Section -->
+        <section class="max-w-screen-xl mx-auto px-4 pt-5 md:px-8 lg:px-16 my-5">
+            <div class="text-center space-x-3 bg-slate-200 pt-5">
+                <label class="w-[200px] text-xl font-semibold">
+                    Save:
+                </label>
+                <input class="w-[150px] p-3 bg-gray-400 rounded-lg" type="number" name="" id="savingPercent"> 
+                <span class="text-2xl">%</span> 
+                <button id="saveBtn" class="bg-blue-500 text-center text-xl text-white px-10 py-2 rounded-lg">Save</button>
+            </div>
+            <div class="text-center space-y-3 bg-slate-200 py-5">
+                <h1 class="text-center text-3xl font-bold ">Saving Amount: <span id="savingAmount">00</span> $</h1>
+                <h1 class="text-center text-3xl font-bold ">Remaining Balance: <span id="remainingBalance">00</span> $</h1>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center bg-black text-white p-5 mt-5">
+        All Rights Reserved by @Md Shojib Hossain || 2023
+    </footer>
+    
+    <!-- JavaScript File Connection -->
+    <script src="./Js/script.js"></script>
+</body>
+
+</html>
